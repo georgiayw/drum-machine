@@ -1,3 +1,9 @@
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 33vh;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,43 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid black;
+  width: 300px;
+  height: 240px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.drum-pad {
+  border: 1px solid black;
+  width: 90px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.drum {
+  border: 1px solid black;
+  width: 700px;
+  height: 300px;
+}
+
+#display {
+  border: 1px solid black;
+  height: 50px;
+  width: 220px;
+  display: flex;
+  position: absolute;
+  left: 515px;
+  align-items: center;
+  justify-content: center;
+  top: 380px;
 }
